@@ -1,0 +1,17 @@
+body
+{
+    width:300px;
+    border:3px solid black;
+    padding:10px 50px 30px;
+    margin:30px auto;
+    margin-top: 70px;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #03320d,#eaea32ca);
+}
+#button
+{
+    font-size: 20px;
+    height: 40px;
+    width:250px;
+    background:  #abd71bca;
+}

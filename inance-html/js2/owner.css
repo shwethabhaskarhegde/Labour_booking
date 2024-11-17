@@ -1,0 +1,107 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing:border-box;
+	font-family: 'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+}
+body{
+	color: #fff;
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(135deg, #05073a,#0666dcca);
+}
+.container{
+	max-width: 700px;
+	width: 100%;
+	padding: 25px 30px;
+	border-radius: 25px;
+	background: linear-gradient(135deg,#065cdcca, #05073a);
+}
+.container .heading::before
+{
+   content: '';
+   position: absolute;
+   height: 3px;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   /*background: linear-gradient(135deg, #71b7e6, #9b5b);*/
+}
+.container form .d1
+{
+	margin-top: 25px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+form .d1 .d2{
+	width: calc(100% / 2 - 20px);
+	margin-bottom: 15px;
+}
+.d1 .d2 .d3{
+	display:block ;
+	font-weight: 500;
+	margin-bottom: 5px;
+}
+.d1 .d2 input{
+	height: 35px;
+	width: 190px;
+	outline: none;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	padding-left: 15px;
+	font-size: 26px;
+	border-bottom-width:2px ;
+	transition: all 0.3s ease;
+}
+.d1 .d2 input:focus,
+.d1 .d2 input:valid
+{
+	border-color: #9b59b6;
+}
+form .rdbutton .category{
+	font-size: 20px;
+	font-weight: 500;
+	border-bottom: 2px solid;
+}
+form .d1 .category{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+form .button{
+	text-align: center;
+}
+form .button input
+{
+	padding: 10px 0;
+	margin-top:10px ;
+	height: 60px;
+	width: 30%;
+	outline: none;
+	color: #fff;
+	border: none;
+	font-size: 28px;
+	font-weight: 500;
+	border-radius: 5px;
+	letter-spacing: 1px;
+    background: linear-gradient(135deg, #05073a,#065cdcca);
+}
+form .button input:hover
+{
+	background:#05073a;
+}
+.d2 select{
+	height: 35px;
+	width: 190px;
+	outline: none;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	padding-left: 15px;
+	font-size: 16px;
+	border-bottom-width:2px ;
+	transition: all 0.3s ease;
+}
+
+

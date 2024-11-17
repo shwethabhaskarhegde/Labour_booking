@@ -1,0 +1,10 @@
+#warp {
+	background:#281300 url(bg-head.jpg) repeat-x;
+	padding-bottom:50px;
+}
+body, a:hover, #headright h3.login a:hover, .aActive{
+	color:#fff;
+}
+#headright h3.login, #headright h3.login a, a.bookMan {
+	color:#FF6666;
+}

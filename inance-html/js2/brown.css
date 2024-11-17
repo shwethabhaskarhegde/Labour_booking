@@ -1,0 +1,39 @@
+#warp {
+	background:#281300 url(bg-head.jpg) repeat-x;
+	padding-bottom:50px;
+}
+body, a:hover, #headright h3.login a:hover, .aActive{
+	color:#fff;
+}
+#headright h3.login, #headright h3.login a, a.bookMan {
+	color:#FF6666;
+}
+<?php
+	
+	$connect = mysqli_connect("localhost","root","","Labour2");
+	if($connect===false)
+	{
+		die("ERROR:could not connect"
+			.mysqli_connect_error());
+	}
+	else{
+		echo "connected";
+	}
+	
+if(isset($_REQUEST['id']) || isset($_REQUEST['from']) || isset($_REQUEST['to']))
+{
+	   $id = $_REQUEST['id'];
+	   $from = $_REQUEST['from'];
+	   $to = $_REQUEST['to'];
+	   $sql = "INSERT INTO `labourbook`(`id`, `from`, `to`) VALUES ('$id','$from','$to')";
+	   if(mysqli_query($connect,$sql))
+	   {
+	   	echo "registration successfull!";
+		header ('location:homepage.php');
+	   }
+	   else
+	   {
+	   	echo "registration unsuccessfull!";
+	   }
+	}
+    ?>
